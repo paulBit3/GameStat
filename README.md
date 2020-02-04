@@ -1,2 +1,3 @@
 # GameStat
-My play station
+Welcome to  GameStat! Your play station!
+
