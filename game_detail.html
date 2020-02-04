@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>e-game store</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- slider price -->
+    <link rel="stylesheet" href="css/slider_range.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- search bar and shopping cart -->
+    <div class="top-nav-bar">
+
+      <div class="search-box">
+
+        <img src="img/gmlog1.jpg" class="logo" alt="">
+        <i class="fas fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fas fa-time" id="close-btn" onclick="closemenu()"></i>
+        <input type="text" class="form-control">
+        <span class="input-group-text"><i class="fas fa-search"></i></span>
+
+      </div>
+      <!-- end search bar -->
+
+     <!-- menu bar -->
+      <div class="menu-bar">
+        <ul>
+          <li>
+            <a href="#">My GameSataion</a>
+          </li>
+          <li>
+            <a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a>
+          </li>
+          <li>
+            <a href="cart.html"><i class="fas fa-shopping-cart p-2"></i>CART</a>
+          </li>
+        </ul>
+        <div class="col-md-4 col-12 text-right">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+               data-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false">
+                <i class="fa fa-user"></i>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right dropdown-unique"
+              aria-labelledy="navbarDropdownMenuLink">
+              <p class="my-md-4 header-links">
+                <a class="dropdown-item" href="login">My Account</a>
+                <a  class="dropdown-item" href="#">My Order History</a>
+                <a class="dropdown-item" href="#">Check Order Status</a>
+              </p>
+              </div>
+          </div>
+      </div>
+         <!-- End menu bar -->
+    </div>
+       <!-- End top nav bar -->
+
+    <!-- vertical side bar -->
+    <section class="header">
+      <div class="side-menu">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <!-- End vertical side bar -->
+
+
+     <!-- Categoris-->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="left-sidebar">
+                <h2>Game Category</h2>
+                <div class="panel-group category-products" id="accordian">
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordian" href="#pstation">
+                        <span class="badge pull-right"><i class="fas fa-plus"></i></span>
+                        Play Station
+                      </a>
+                      </h4>
+                    </div>
+                    <div id="pstation" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <ul>
+                          <li><a href="#">NBA</a></li>
+                          <li><a href="#">FIFA</a></li>
+                          <li><a href="#">NFL</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordian" href="#gboy">
+                        <span class="badge pull-right"><i class="fas fa-plus"></i></span>
+                         Game Boy
+                      </a>
+                      </h4>
+                    </div>
+                    <div id="gboy" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <ul>
+                          <li><a href="#">Call of duty</a></li>
+                          <li><a href="#">Black Mirror</a></li>
+                          <li><a href="#">Tokyo Xanadou</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordian" href="#console">
+                        <span class="badge pull-right"><i class="fas fa-plus"></i></span>
+                         Console Gaming
+                      </a>
+                      </h4>
+                    </div>
+                    <div id="console" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <ul>
+                          <li><a href="#">Xbox</a></li>
+                          <li><a href="#">PlayStation</a></li>
+                          <li><a href="#">Nintendo</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordian" href="#GS">
+                        <span class="badge pull-right"><i class="fas fa-plus"></i></span>
+                         Gaming Accessories
+                      </a>
+                      </h4>
+                    </div>
+                    <div id="GS" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <ul>
+                          <li><a href="#">Xbox One Accessories</a></li>
+                          <li><a href="#">PS4 Accessories</a></li>
+                          <li><a href="#">Nintendo</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"><a href="">XBox</a></h4>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"><a href="">Nintendo</a></h4>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- game price range -->
+                <div class="price-range">
+                  <h2>Game Price Range</h2>
+                  <div class="well text-center">
+                    <input type="text" class="span2" name="" value="" data-slider-min="0" data-slider-max="1000" data-slider-step="5"
+                    data-slider-value="[250, 450]" id="sl2"> <br>
+                    <b class="pull-left">$0</b> <b class="pull-right">$1000</b>
+                  </div>
+                </div>
+                <!-- end game price range -->
+              </div>
+            </div>
+
+            <!-- game details -->
+            <div class="col-sm-9 padding-right">
+              <div class="product-details">
+               <div class="col-sm-5">
+                 <div class="view-product">
+                   <img src="img/Xbox One S 1TB-controller2.jpg" alt="">
+                 </div>
+               </div>
+               <div class="col-sm-7">
+                 <div class="product-info">
+                   <!-- here will check if product new or not but not now-->
+                   <!-- product info -->
+                   <h2>Xbox One S 1TB-controller2</h2>
+                   <p>Battle to be the last one standing in the worldwide Fortnite phenomenon.
+                   Includes a gradient purple Xbox One S console and matching purple Xbox Wireless Controller</p>
+
+                   <!-- showing raing here but not now -->
+                   <span>
+                     <h2 class="price"><span>$45.99</span></h2>
+
+                     <footer class="content">
+                       <span class="qt-minus">-</span>
+                       <span class="qt">1</span>
+                       <span class="qt-plus">+</span>
+
+                       <br>
+                       <h2 class="full-price"><span>$45.99</span></h2>
+
+                     </footer>
+
+                     <br><br>
+                     <button type="button" class="btn btn-default cart">
+                       <i class="fa fa-shopping-cart"></i>Add to cart</button>
+                   </span>
+                 </div>
+               </div>
+              </div><!--end details -->
+
+
+               <!-- recommended-items -->
+               <div class="container">
+                 <h2 class="title text-center">Recommended games</h2>
+                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                   <ol class="carousel-indicators">
+                     <li data-target="#carousel" data-slide-to="0"></li>
+                     <li data-target="#carousel" data-slide-to="1"></li>
+                     <li data-target="#carousel" data-slide-to="2"></li>
+                   </ol>
+                   <div class="carousel-inner row w-100 mx-auto ">
+                     <div class="carousel-item active">
+                       <div class="col-md-3">
+                         <div class="product-image-wrapper">
+                           <div class="single-products">
+                             <div class="productinfo text-center">
+                                <div class="card">
+                                  <img class="card-img-top img-fluid" src="img/Razer Wolverine Ultimate Gaming Controller - Xbox One.jpg" alt="card-img">
+                                </div>
+                                <h2>$42.95</h2>
+                                <p>Razer Wolverine Ultimate Gaming Controller - Xbox One</p>
+                                <a href="#" class="btn btn-default add-to-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="carousel-item">
+                       <div class="col-md-3">
+                         <div class="product-image-wrapper">
+                           <div class="single-products">
+                             <div class="productinfo text-center">
+                              <div class="card">
+                                <img class="card-img-top img-fluid" src="img/NBA 2K20 Legend Edition for PC.jpg" alt="card-img">
+                              </div>
+                              <h2>$89.99</h2>
+                              <p>NBA 2K20 Legend Edition for PC <br />Online Game</p>
+                              <a href="#" class="btn btn-default add-to-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                     </div>
+
+                     <div class="carousel-item">
+                       <div class="col-md-3">
+                         <div class="product-image-wrapper">
+                           <div class="single-products">
+                             <div class="productinfo text-center">
+                              <div class="card">
+                                <img class="card-img-top img-fluid" src="img/Call of Duty.jpg" alt="card-img">
+                              </div>
+                              <h2>$35.99</h2>
+                              <p>Call of Duty: Black Ops 4 <br />PlayStation 4</p>
+                              <a href="#" class="btn btn-default add-to-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+
+                     </div>
+
+                     <a class="left recommended-item-control" href="#myCarousel" data-slide="prev">
+      								<i class="fa fa-angle-left"></i>
+      							  </a>
+      							  <a class="right recommended-item-control" href="#myCarousel" data-slide="next">
+      								<i class="fa fa-angle-right"></i>
+      							  </a>
+
+                   </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+
+      </section>
+
+      <!-- Footer -->
+
+ <footer class="page-footer footer-bottom center-on-small-only stylish-color-dark">
+
+   <!-- Footer Links -->
+   <div class="container">
+     <div class="row">
+      <!-- First column -->
+      <div class="col-md-4">
+        <h5 class="title md-4 mt-3 font-bold">Customer Service</h5>
+        <ul class="list-unstyled">
+
+          <li><a href="#">Get Help</a></li>
+          <li><a href="#">Return</a></li>
+          <li><a href="#">Guest/In-Store Orders</a></li>
+          <li><a href="#">Store Pickup</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">Contact us</a></li>
+
+        </ul>
+        <p></p>
+      </div>
+      <!-- End First column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Second column -->
+      <div class="col-md-2 mx-auto">
+        <h5 class="title mb-4 mt-3 font-bold">Spotlight</h5>
+        <ul class="list-unstyled">
+
+          <li><a href="#">Video Games</a></li>
+          <li><a href="#">Digital Games</a></li>
+          <li><a href="#">Console Games</a></li>
+          <li><a href="#">Electronics</a></li>
+
+        </ul>
+      </div>
+      <!-- End second column -->
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- 3rd column -->
+      <div class="col-md-2 mx-auto">
+        <h5 class="title mb-4 mt-3 font-bold">Shipping</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Shipping Information</a></li>
+          <li><a href="#">Money back Policy</a></li>
+        </ul>
+      </div>
+      <!-- End 3rd column -->
+      <hr class="clearfix w-100 d-md-none">
+      <!-- 4th column -->
+      <div class="col-md-2 mx-auto">
+        <h5 class="title mb-4 mt-3 font-bold">Stay Connected!</h5>
+        <div class="col-5 col-md-12">
+          <h5 >Get the app</h5>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+      </div>
+      <!-- End 4th column -->
+     </div>
+   </div>
+   <!-- End footer Link -->
+
+      <hr class="my-4">
+       <div class="call-to-action">
+         <ul class="list-unstyled list-inline text-center py-2">
+           <li class="list-inline-item">
+             <h5 class="mb-1">Register for free</h5>
+           </li>
+           <li class="list-inline-item">
+             <form class="input-group" action="" method="post">
+               <input type="text" class=" " placeholder="Your email"
+                 aria-label="Your email" aria-describedby="basic-addon2">
+               <div class="input-group-append">
+               <button class="btn  btn-default my-0" type="button" name="button">Sign up</button>
+               </div>
+             </form>
+           </li>
+         </ul>
+       </div>
+
+        <!-- End call to action -->
+
+       <hr>
+       <!-- social buttons -->
+       <!-- Grid column -->
+         <div class="col-md-12 py-5">
+           <div class="mb-5 flex-center">
+            <h5 class="font-weight-bold mb-4">Follow Us</h5>
+            <br/><br/>
+             <!-- Facebook -->
+             <a class="fb-ic">
+               <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+             </a>
+             <!-- Twitter -->
+             <a class="tw-ic">
+               <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+             </a>
+             <!-- Google +-->
+             <a class="gplus-ic">
+               <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+             </a>
+             <!--Linkedin -->
+             <a class="li-ic">
+               <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+             </a>
+             <!--Instagram-->
+             <a class="ins-ic">
+               <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+             </a>
+             <!--Pinterest-->
+             <a class="pin-ic">
+               <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+             </a>
+           </div>
+         </div>
+         <!-- Grid column -->
+
+       <!-- End social buttons -->
+
+   <!-- Copyright -->
+   <div class="footer-copyright text-center py-3">
+     <div class="container-fluid">
+       © 2019 MobiGital | All Rights Reserved <a href="http://www.paulbit.com/">Paul B.</a>
+     </div>
+   </div>
+   <!-- End Copyright -->
+
+ </footer>
+     <!-- slider -->
+     <script>
+         $(function(){
+             // Activate Carousel
+             $("#recommended-item-carousel").carousel();
+         });
+     </script>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- bootstrap slider price range -->
+    <script src="js/bootstrap-slider.js"></script>
+
+    <!-- order qty management -->
+    <!-- <script src="js/orderqty.js"></script> -->
+
+
+  </body>
+</html>
